@@ -31,6 +31,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       zlib1g-dev \
       libpng12-dev \
       libjpeg62-turbo-dev \
+      libmysqlclient-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 RUN git clone --depth 1 git://github.com/php-build/php-build.git \
