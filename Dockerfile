@@ -13,6 +13,7 @@ ENV PHPIZE_DEPS \
 
 RUN apt-get -qq update && apt-get -qq install -y \
       $PHPIZE_DEPS \
+      locate \
       ca-certificates \
       curl \
       libedit2 \
