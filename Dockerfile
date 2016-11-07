@@ -65,6 +65,7 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 
 
 ENV PHP_VERSION 5.2.17
-RUN php-build $PHP_VERSION /usr
+RUN php-build $PHP_VERSION /usr \
+      && rm -rf /tmp/php-build*
 
 CMD ["php", "-a"]
