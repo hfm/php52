@@ -18,6 +18,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libedit2 \
       libsqlite3-0 \
       libxml2 \
+      libxml2-dev \
       xz-utils \
       git \
       bzip2 \
