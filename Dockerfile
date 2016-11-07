@@ -43,6 +43,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
 
 
 RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
+--enable-dba=shared\n\
 --enable-mbregex\n\
 --without-sqlite\n\
 --without-mime-magic\n\
