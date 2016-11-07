@@ -52,6 +52,7 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --enable-xmlreader=shared\n\
 --enable-xmlwriter=shared\n\
 --with-bz2\n\
+--with-gd\n\
 --with-ncurses=shared\n\
 --with-pcre-regex\n\
 --without-sqlite\n\
