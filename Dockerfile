@@ -50,9 +50,11 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --enable-soap=shared\n\
 --enable-xmlreader=shared\n\
 --enable-xmlwriter=shared\n\
+--with-bz2\n\
+--with-ncurses=shared\n\
+--with-pcre-regex\n\
 --without-sqlite\n\
---without-mime-magic\n\
---with-bz2\n'\
+--without-mime-magic\n'\
 >> /usr/local/share/php-build/default_configure_options \
       && sed -i 's/without-pear/with-pear/' /usr/local/share/php-build/default_configure_options
 
