@@ -21,6 +21,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       xz-utils \
       git \
       bzip2 \
+      libbz2-dev \
       libcurl4-openssl-dev \
       libedit-dev \
       libsqlite3-dev \
@@ -35,12 +36,15 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libreadline-dev \
       libtidy-dev \
       libxslt1-dev \
-      --no-install-recommends && rm -r /var/lib/apt/lists/*
+      --no-install-recommends && rm -r /var/lib/apt/lists/* \
 
-RUN git clone --depth 1 git://github.com/php-build/php-build.git \
+      && git clone --depth 1 git://github.com/php-build/php-build.git \
       && bash /php-build/install.sh && rm -rf /php-build
 
-RUN echo '--with-libdir=lib/x86_64-linux-gnu' >> /usr/local/share/php-build/default_configure_options
+
+RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
+--with-bz2\n'\
+>> /usr/local/share/php-build/default_configure_options
 
 ENV PHP_VERSION 5.2.17
 RUN php-build $PHP_VERSION /usr
