@@ -39,6 +39,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libncurses5-dev \
       libpspell-dev \
       libmhash-dev \
+      unixodbc-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/* \
 
       && git clone --depth 1 git://github.com/php-build/php-build.git \
@@ -62,6 +63,7 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --with-pcre-regex\n\
 --with-pspell\n\
 --with-layout=GNU\n\
+--with-unixODBC=/usr\n\
 --without-sqlite\n\
 --without-mime-magic\n'\
 >> /usr/local/share/php-build/default_configure_options \
