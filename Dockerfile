@@ -61,6 +61,7 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --with-mhash\n\
 --with-ncurses=shared\n\
 --with-pcre-regex\n\
+--with-pdo-odbc=unixODBC,/usr\n\
 --with-pspell\n\
 --with-layout=GNU\n\
 --with-t1lib\n\
