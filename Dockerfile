@@ -30,7 +30,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libmcrypt-dev \
       zlib1g-dev \
       libpng12-dev \
-      libjpeg62-turbo-dev \
+      libjpeg62-dev \
       libmysqlclient-dev \
       libreadline-dev \
       libtidy-dev \
