@@ -44,7 +44,9 @@ RUN apt-get -qq update && apt-get -qq install -y \
 
 RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --with-bz2\n'\
->> /usr/local/share/php-build/default_configure_options
+>> /usr/local/share/php-build/default_configure_options \
+      && sed -i 's/without-pear/with-pear/' /usr/local/share/php-build/default_configure_options
+
 
 ENV PHP_VERSION 5.2.17
 RUN php-build $PHP_VERSION /usr
