@@ -36,6 +36,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libreadline-dev \
       libtidy-dev \
       libxslt1-dev \
+      libncurses5-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/* \
 
       && git clone --depth 1 git://github.com/php-build/php-build.git \
