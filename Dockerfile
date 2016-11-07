@@ -38,6 +38,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libxslt1-dev \
       libncurses5-dev \
       libpspell-dev \
+      libmhash-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/* \
 
       && git clone --depth 1 git://github.com/php-build/php-build.git \
@@ -56,6 +57,7 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --enable-force-cgi-redirect\n\
 --with-bz2\n\
 --with-gd\n\
+--with-mhash\n\
 --with-ncurses=shared\n\
 --with-pcre-regex\n\
 --with-pspell\n\
