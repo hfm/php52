@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:wheezy
 MAINTAINER OKUMURA Takahiro <hfm.garden@gmail.com>
 
 ENV PHPIZE_DEPS \
