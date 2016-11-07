@@ -18,11 +18,14 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libedit2 \
       libsqlite3-0 \
       libxml2 \
-      libxml2-dev \
       xz-utils \
       git \
       bzip2 \
-      openssl \
+      libcurl4-openssl-dev \
+      libedit-dev \
+      libsqlite3-dev \
+      libssl-dev \
+      libxml2-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 RUN git clone --depth 1 git://github.com/php-build/php-build.git \
