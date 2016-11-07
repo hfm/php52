@@ -64,7 +64,6 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --with-pdo-odbc=unixODBC,/usr\n\
 --with-pspell\n\
 --with-layout=GNU\n\
---with-t1lib\n\
 --with-unixODBC=/usr\n\
 --without-sqlite\n\
 --without-mime-magic\n'\
