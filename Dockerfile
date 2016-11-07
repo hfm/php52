@@ -29,7 +29,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libicu-dev \
       libmcrypt-dev \
       zlib1g-dev \
-      libpng-dev \
+      libpng12-dev \
       libjpeg62-turbo-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/* && updatedb
 
