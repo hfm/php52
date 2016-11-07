@@ -34,6 +34,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libmysqlclient-dev \
       libreadline-dev \
       libtidy-dev \
+      libxslt1-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 RUN git clone --depth 1 git://github.com/php-build/php-build.git \
