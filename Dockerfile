@@ -24,3 +24,8 @@ RUN apt-get -qq update && apt-get -qq install -y \
 
 RUN git clone --depth 1 git://github.com/php-build/php-build.git \
       && sh /php-build/install.sh && rm -rf /php-build
+
+ENV PHP_VERSION 5.2.17
+RUN php-build $PHP_VERSION /usr
+
+CMD ["php", "-a"]
