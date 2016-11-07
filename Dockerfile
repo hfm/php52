@@ -31,7 +31,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       zlib1g-dev \
       libpng-dev \
       libjpeg62-turbo-dev \
-      --no-install-recommends && rm -r /var/lib/apt/lists/*
+      --no-install-recommends && rm -r /var/lib/apt/lists/* && updatedb
 
 RUN git clone --depth 1 git://github.com/php-build/php-build.git \
       && bash /php-build/install.sh && rm -rf /php-build
