@@ -30,7 +30,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libmcrypt-dev \
       zlib1g-dev \
       libpng-dev \
-      libjpeg-dev \
+      libjpeg62-turbo \
       --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 RUN git clone --depth 1 git://github.com/php-build/php-build.git \
