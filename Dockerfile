@@ -26,6 +26,10 @@ RUN apt-get -qq update && apt-get -qq install -y \
       libsqlite3-dev \
       libssl-dev \
       libxml2-dev \
+      libicu-dev \
+      libmcrypt-dev \
+      zlib1g-dev \
+      libpng-dev \
       --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 RUN git clone --depth 1 git://github.com/php-build/php-build.git \
