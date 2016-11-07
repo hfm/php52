@@ -61,6 +61,7 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --with-ncurses=shared\n\
 --with-pcre-regex\n\
 --with-pspell\n\
+--with-layout=GNU\n\
 --without-sqlite\n\
 --without-mime-magic\n'\
 >> /usr/local/share/php-build/default_configure_options \
