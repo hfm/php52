@@ -51,6 +51,7 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --enable-soap=shared\n\
 --enable-xmlreader=shared\n\
 --enable-xmlwriter=shared\n\
+--enable-gd-native-ttf\n\
 --with-bz2\n\
 --with-gd\n\
 --with-ncurses=shared\n\
