@@ -45,6 +45,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
 RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --enable-mbregex\n\
 --without-sqlite\n\
+--without-mime-magic\n\
 --with-bz2\n'\
 >> /usr/local/share/php-build/default_configure_options \
       && sed -i 's/without-pear/with-pear/' /usr/local/share/php-build/default_configure_options
