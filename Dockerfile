@@ -50,8 +50,8 @@ RUN echo '--with-libdir=lib/x86_64-linux-gnu\n\
 --enable-dba=shared\n\
 --enable-dbase=shared\n\
 --enable-mbregex\n\
---enable-json=shared\n\
---enable-soap=shared\n\
+--enable-json\n\
+--enable-soap\n\
 --enable-xmlreader=shared\n\
 --enable-xmlwriter=shared\n\
 --enable-gd-native-ttf\n\
